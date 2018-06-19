@@ -16,6 +16,7 @@ It consists of a DynamoDB backend that stores the short URL and long URL mapping
 * AWS credentials
 * Terraform
 * [zappa](https://github.com/Miserlou/Zappa)
+* You'll also need to create a unique S3 bucket that zappa can use and update this in `zappa_settings.json`. It's a drawback I didn't have time to automate.
 
 # Deploying
 
