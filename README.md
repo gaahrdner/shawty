@@ -4,6 +4,10 @@ An HTTP-based RESTful API for managing short URLS.
 
 It consists of a DynamoDB backend that stores the short URL and long URL mappings, and the server is an AWS Lambda job written in Python and deployed with Zappa. This should allow it to scale up quickly and automatically based on heavy usage.
 
+# Caveats
+
+1. Ideally this would run under a custom domain which could be retrieved from API Gateway, but I ran out of time to do this. As such the endpoint is currently hardcoded in `settings.py` but can be overriden via the `BASE_URL` environment variable.
+
 # Requirements
 
 * Python 3.6.6

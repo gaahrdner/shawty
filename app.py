@@ -89,7 +89,5 @@ def create_url():
     store_uuid(uuid, url)
 
     return jsonify(
-        short_url=uuid
+        short_url=settings.BASE_URL + "/" + uuid
     )
-
-
