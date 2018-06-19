@@ -2,6 +2,8 @@
 
 An HTTP-based RESTful API for managing short URLS.
 
+[Try it out here!](https://8towom9km4.execute-api.us-west-2.amazonaws.com/dev)
+
 It consists of a DynamoDB backend that stores the short URL and long URL mappings, and the server is an AWS Lambda job written in Python and deployed with Zappa. This should allow it to scale up quickly and automatically based on heavy usage.
 
 # Caveats
